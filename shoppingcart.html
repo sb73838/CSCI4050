@@ -2,58 +2,102 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Online Bookstore">
-  <meta name="keywords"
-    content="bookstore, shopping, ecommerce, books, shop">
-  <meta name="author" content="Avery Davis">
-  <title>BookStore | Home</title>
-  <link rel="stylesheet" href="./css/stylesheet.css">
-  <script src="scripts.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Online Bookstore">
+<meta name="keywords"
+  content="bookstore, shopping, ecommerce, books, shop">
+<meta name="author" content="Shreenal Patel">
+<title>BookStore | Shopping Cart</title>
+
+<link rel="stylesheet" href="./css/checkoutstyle.css">
+<script src="scripts.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-          <div id="branding">
-            <h1><span class="highlight">BookStore</span> Online</h1>
+  <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">BookStore</span> Online</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li class="current"><a href="shoppingcart.html">Shopping Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+      <div class="container">
+        <h1 class="page-title">Shopping Cart</h1>
+        <div class="item">
+          <div class="cover">
+            <img src="./img/books/Ayn Rand - The Fountainhead.jpeg">
           </div>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Register</a></li>
-              <li class="current"><a href="shoppingcart.html">Shopping Cart</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <section id="main">
-        <div class="container">
-          <article id="main-col">
-            <h1 class="page-title">Shopping Cart</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna. Nam eget eros non orci consectetur congue at ac augue. Proin eget arcu in enim feugiat ultricies. Curabitur maximus metus nec metus pretium viverra at et orci. Integer hendrerit ante ut placerat cursus.
+          <div class="description">
+            <p>Ayn Rand - The Fountainhead</p>
+          </div>
+          <div class="quantity">
+            <p>Quantity <input type="text" value="1" size="1" name="quantity">
+              <input type="button" value="Delete Book" name="delete">
             </p>
-            <p class="dark">
-    Aliquam eget pharetra diam. Nulla placerat lorem at turpis tempor, vel ultrices dui tincidunt. Proin quis egestas lorem. Mauris vehicula lectus odio, sit amet dictum justo feugiat a. Praesent id dictum lacus. Sed ullamcorper id erat ut dictum. Fusce porttitor lorem sapien, in aliquet sapien convallis et. Donec nec mauris nulla. Curabitur cursus semper odio, et hendrerit ante. Nunc at cursus ante. Maecenas gravida ligula ut efficitur suscipit. Nulla id turpis varius, pretium nunc sed, fermentum sem. Sed lacinia nunc non interdum pellentesque.
-            </p>
-          </article>
-    
-          <aside id="sidebar">
-            <div class="dark">
-              <h3>Side Bar Title</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</p>
-            </div>
-          </aside>
+          </div>
+          <div class="price">
+            <p>$10.99</p>
+          </div>
         </div>
-      </section>
 
-  <footer>
-    <p>CSCI4030 Team X, Copyright &copy; 2020</p>
-  </footer>
+        <div class="item">
+          <div class="cover">
+            <img src="./img/books/Haruki Murakami - Norwegian Wood.jpeg">
+          </div>
+          <div class="description">
+            <p>Haruki Murakami - Norwegian Wood</p>
+          </div>
+          <div class="quantity">
+            <p>Quantity <input type="text" value="1" size="1" name="quantity">
+              <input type="button" value="Delete Book" name="delete">
+            </p>
+          </div>
+          <div class="price">
+            <p>$9.99</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="cover">
+            <img src="./img/books/William Gibson - Neuromancer.jpeg">
+          </div>
+          <div class="description">
+            <p>William Gibson - Neuromancer</p>
+          </div>
+          <div class="quantity">
+            <p>Quantity <input type="text" value="1" size="1" name="quantity">
+              <input type="button" value="Delete Book" name="delete">
+            </p>
+          </div>
+          <div class="price">
+            <p>$11.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" >
+        <form action="./checkout1.html">
+          <button type="submit" class="button_2" style="float: right;">Continue to Checkout</button>
+        </form>
+      </div>
+
+      
+    </section>
+
+<footer>
+  <p>CSCI4050 Team 9, Copyright &copy; 2020</p>
+</footer>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
   <meta name="keywords"
     content="bookstore, shopping, ecommerce, books, shop">
   <meta name="author" content="Avery Davis">
-  <title>BookStore | Home</title>
+  <title>Admin | Dashboard</title>
   <link rel="stylesheet" href="./css/adminstylesheet.css">
   <script src="scripts.js"></script>
 </head>
@@ -17,7 +17,7 @@
   <header>
     <div class="container">
       <div id="branding">
-        <h1><span class="highlight">BookStore</span> Online Admin Dashboard</h1>
+        <h1><span class="highlight">BookStore</span> Online Admin Portal</h1>
       </div>
     </div>
   </header>
@@ -27,7 +27,7 @@
     <a href="managebooks.html">Manage Books</a>
     <a href="#">Manage Promotions</a>
     <a href="#">Manage Users</a>
-    <a href="#">Logout</a>
+    <a href="index.html">Logout</a>
   </div>
 
   
@@ -35,48 +35,56 @@
   <div id="main">
     <h2>Admin Dashboard</h2>
     <hr>
-    <h4>Book Catalog</h4>
+    <h4>Recently Sold Books</h4>
     <div style="overflow-x:auto;">
       <table>
-        <tr>
-          <th>Book Title</th>
-          <th>Author</th>
-          <th>In Stock</th>
-          <th>Purchased</th>
-          <th>Returned</th>
-        </tr>
-        <tr>
-          <td>The Fountainhead</td>
-          <td>Ayn Rand</td>
-          <td>100</td>
-          <td>50</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Norwegian Wood</td>
-          <td>Haruki Murakami</td>
-          <td>100</td>
-          <td>94</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>Neuromancer</td>
-          <td>William Gibson</td>
-          <td>100</td>
-          <td>67</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>Moby Dick</td>
-          <td>Herman Melville</td>
-          <td>100</td>
-          <td>30</td>
-          <td>2</td>
-        </tr>
+        <th>Serial #</th>
+        <th>Book Title</th>
+        <th>Author</th>
+        <th>MSRP</th>
+        <th>In Stock</th>
+        <th>Purchased</th>
+        <th>Returned</th>
+      </tr>
+      <tr>
+        <td>AR001</td>
+        <td>The Fountainhead</td>
+        <td>Ayn Rand</td>
+        <td>$12.00</td>
+        <td>100</td>
+        <td>50</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>HM001</td>
+        <td>Norwegian Wood</td>
+        <td>Haruki Murakami</td>
+        <td>$14.00</td>
+        <td>100</td>
+        <td>94</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>WG001</td>
+        <td>Neuromancer</td>
+        <td>William Gibson</td>
+        <td>$14.00</td>
+        <td>100</td>
+        <td>67</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>HM002</td>
+        <td>Moby Dick</td>
+        <td>Herman Melville</td>
+        <td>$12.00</td>
+        <td>100</td>
+        <td>30</td>
+        <td>2</td>
       </table>
     </div>
 
-    <h4>Promotions</h4>
+    <h4>Active Promotions</h4>
     <div style="overflow-x:auto;">
       <table>
         <tr>
@@ -88,7 +96,7 @@
         </tr>
         <tr>
           <td>Sci-Fi Discount</td>
-          <td>Neuromancer</td>
+          <td>WG001</td>
           <td>15%</td>
           <td>XXX1-23XX-X321</td>
           <td>01/01/2021</td>
@@ -96,7 +104,7 @@
       </table>
     </div>
 
-    <h4>Users</h4>
+    <h4>New Users</h4>
     <div style="overflow-x:auto;">
       <table>
         <tr>
@@ -118,7 +126,28 @@
           <td>Gallup</td>
           <td>sgallup@mail.com</td>
           <td>No</td>
-          <td>9/07/2020</td>
+          <td>8/26/2020</td>
+        </tr>
+        <tr>
+          <td>Lol</td>
+          <td>Tolhurst</td>
+          <td>ltolhurst@mail.com</td>
+          <td>No</td>
+          <td>8/25/2020</td>
+        </tr>
+        <tr>
+          <td>Jim</td>
+          <td>Gunthrie</td>
+          <td>jgunthrie@mail.com</td>
+          <td>Yes</td>
+          <td>8/21/2020</td>
+        </tr>
+        <tr>
+          <td>Kate</td>
+          <td>Bush</td>
+          <td>kbush@mail.com</td>
+          <td>Yes</td>
+          <td>8/12/2020</td>
         </tr>
       </table>
     </div>
@@ -127,6 +156,8 @@
   <script>
 
   </script>
+  
 </body>
+
 
 </html>
