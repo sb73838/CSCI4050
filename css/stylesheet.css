@@ -69,6 +69,29 @@ header nav{
   margin-top:10px;
 }
 
+/* Style the search box inside the navigation bar */
+
+header input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+header .search_button{
+  float: right;
+  display: inline;
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+
 header .highlight, header .current a{
   color:#e8491d;
   font-weight:bold;
@@ -117,14 +140,14 @@ header a:hover{
   width:90px;
 }
 /* Popup container */
-.popup {
+#boxes .popup {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
 /* The actual popup (appears on top) */
-.popup .popuptext {
+#boxes .popup .popuptext {
   visibility: hidden;
   width: 160px;
   background-color: #555;
@@ -140,7 +163,7 @@ header a:hover{
 }
 
 /* Popup arrow */
-.popup .popuptext::after {
+#boxes .popup .popuptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -152,7 +175,7 @@ header a:hover{
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+#boxes .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
