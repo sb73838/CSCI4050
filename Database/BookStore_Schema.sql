@@ -118,17 +118,33 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `bookstore`.`Book_Category`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `bookstore`.`Book_Category` (
+  `code` VARCHAR(10) NOT NULL,
+  `description` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`code`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `bookstore`.`Book`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `bookstore`.`Book` (
   `book_id` INT NOT NULL,
   `isbn` INT NULL,
-  `category` VARCHAR(45) NULL,
+  `category` VARCHAR(10) NOT NULL,
   `title` VARCHAR(100) NOT NULL,
   `edition` VARCHAR(20) NULL,
   `publisher` VARCHAR(45) NULL,
   `publication_year` INT NULL,
-  PRIMARY KEY (`book_id`))
+  PRIMARY KEY (`book_id`),
+  INDEX `fk_Book_category1_idx` (`category` ASC) VISIBLE,
+    CONSTRAINT `fk_Book_category1`
+    FOREIGN KEY (`category`)
+    REFERENCES `bookstore`.`Book_Category` (`code`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -161,7 +177,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `bookstore`.`Payment_Card` (
   `card_id` INT NOT NULL,
   `customer_id` INT NOT NULL,
-  `card_number` BLOB NULL DEFAULT NULL,,
+  `card_number` BLOB NULL DEFAULT NULL,
   `expiration_date` DATE NULL,
   `card_type` VARCHAR(10) NOT NULL,
   PRIMARY KEY (`card_id`),
